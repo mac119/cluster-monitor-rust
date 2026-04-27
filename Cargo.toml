@@ -1,0 +1,16 @@
+[package]
+name = "cluster-monitor"
+version = "0.1.0"
+edition = "2021"
+description = "Redis cluster monitor tool - Rust implementation"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+
+[[bin]]
+name = "monitor-on-vip"
+path = "src/monitor_on_vip.rs"
+
+[[bin]]
+name = "monitor-on-proxy"
+path = "src/monitor_on_proxy.rs"
